@@ -1,0 +1,514 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start my CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: #020659;
+}
+body {
+    min-width: 330px;
+    max-width: 834px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    background-color: #030a8c;
+}
+#navbar {
+    grid-column: 1 / span 1;
+    grid-row: 1 /  span 1;
+}
+h1 {
+    font-size:1.25em;
+    font-weight: bold;
+    padding: 10px;
+}
+#container {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    color:#ffffff;
+    background-image: linear-gradient(to right, #2104D9, black);
+    height: 100px;
+    padding-top: 20px;
+}
+#container p {
+    padding:10px;
+}
+nav ul {
+    list-style: none;
+    background-color: #030a8c;
+    width: 834px;    
+}
+nav li {
+    background-color: #030a8c;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    align-content: center;
+    padding: 10px;
+}
+nav li:hover {
+    background-color: #590242;
+}   
+a:hover {
+    background-color: #590242;
+}
+a {
+    display: block;
+    text-decoration: none;
+    background-color: #030a8c;
+    color: #ffffff;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+}
+#muzak {
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.5em;
+}
+h2, h3 {
+    font-size: 1em;
+    color:#590242;
+}
+button {
+    display: inline;
+    background-color: #590242;
+    color:#ffffff;
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    margin: 10px;
+}
+button:hover {
+    background-color: #020659;
+}
+#trending {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat (6, 1fr);
+    grid-template-rows: 1fr, 1fr;
+    grid-gap: 10px;
+    overflow: scroll;
+    padding: 10px;
+}
+div {
+    position: relative;
+}
+.text {
+    position: absolute;
+    background-color: rgb(211, 210, 210);
+    opacity: .8;
+    top: 253px;
+    width: 301px;
+    padding: 5px;
+}
+.text h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+audio {
+    opacity: .5;
+}
+#aloma audio {
+    position: absolute;
+    top: 105px;
+    left: 5px;   
+}
+#road audio {
+    position: absolute;
+    top: 105px;
+    left: 5px;
+}
+#papaya audio {
+    position: absolute;
+    top: 105px;
+    left: 5px;
+}
+#smoothies audio {
+    position: absolute;
+    top: 105px;
+    left: 5px;
+}
+#performance audio {
+    position: absolute;
+    top: 105px;
+    left: 5px;
+}
+#aloma {
+    grid-column: 1 / 2;
+}
+#road {
+    grid-column: 2 / 3;
+}
+#papaya {
+    grid-column: 3 / 4;
+}
+#smoothies {
+    grid-column: 4 / 5;
+}
+#performance {
+    grid-column: 5 / 6;
+}
+#button-trending {
+    float: right;
+}
+p, dt, dd, button {
+    font-size: 1em;
+}
+dt {
+    font-style: italic;
+}
+#combo h3 {
+    color:#ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#playlists section {
+    background-color: #2699fb;
+       
+}
+#playlists a {
+    background-color: #0D8DFB;
+}
+#playlists a:hover {
+    background-color: #590242;
+}
+#curated section {
+    background-color: #030a8c;
+}
+#curated a {
+    background-color: #020873;
+}
+#curated a:hover {
+    background-color: #590242;
+}
+footer {
+    display: block;
+    margin: 0 auto;
+    text-align:center;
+    padding: 20px;
+}
+footer p {
+    font-size: .75em;
+}   
+section, section h2 {
+    background-color: white;
+}
+section h2 {
+    color: #590242;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* End my CSS */
+
+#trending ::-webkit-scrollbar {
+    
+}
+#trending ::-webkit-scrollbar-track {
+
+}
+#trending ::-webkit-scrollbar-thumb {
+
+}
+#trending ::-webkit-scrollbar-thumb:hover {
+
+}
+#playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+
+}
+#playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+
+}
+#playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+
+}
+#playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+
+}
+audio::-webkit-media-controls-mute-button {
+
+}
+audio::-webkit-media-controls-play-button {
+
+}
+audio::-webkit-media-controls-enclosure {
+
+}
+@media screen and (max-width: 833px) {
+    /*JS Fiddle example: 
+    https://jsfiddle.net/1fzgah3n/
+    Menu Code for Mobile First Style (minus the bits you know how to do): */
+    ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    }
+    label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+    }
+    label span {
+    background-color: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+    }
+    label span:before, label span:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+    }
+    label span:before {
+    top: 5px;
+    }
+    label span:after {
+    top: -5px;
+    }
+    input {
+    display: none;
+    }
+    input:checked ~ ul {
+    max-height: 500px;
+    }
+    input:checked ~ label span {
+    background: transparent;
+    }
+    input:checked ~ label span:before {
+    transform: rotate(-45deg);
+    }
+    input:checked ~ label span:after {
+    transform: rotate(45deg);
+    }
+    input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+    }
+    /* my CSS */
+    body {
+        overflow-x: hidden;
+    }
+    #button-trending {
+        float: left;
+    }
+    #combo {
+        clear:both;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .lists {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: repeat(1, 3fr);
+        max-width: 375px;
+        overflow: scroll;
+    }
+    .lists a {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        height: auto;
+        width: auto;
+        overflow: scroll;
+    }
+    .one {
+        grid-column: 1;
+        padding: 10px;
+    }
+    .one img {
+        grid-row: 1 / span 1;
+    }
+    .one h3 {
+        grid-row: 2 / span 1;
+        padding-top: 10px;
+    }
+    .one p {
+        grid-row: 3 / span 1; 
+    }
+    .two {
+        grid-column: 2;
+        padding: 10px;
+    }
+    .two img {
+        grid-row: 1 / span 1;
+    }
+    .two h3 {
+        grid-row: 2 / span 1;
+        padding-top: 10px;
+    }
+    .two p {
+        grid-row: 3 / span 1;
+        
+    }
+    .three {
+        grid-column: 3;
+        padding: 10px;
+    }
+    .three img {
+        grid-row: 1 / span 1;
+    }
+    .three h3 {
+        grid-row: 2 / span 1;
+        padding-top: 10px;
+    }
+    .three p {
+        grid-row: 3 / span 1;
+        
+    }
+    .four {
+        grid-column: 4;
+        padding: 10px;
+    }
+    .four img {
+        grid-row: 1 / span 1;
+    }
+    .four h3 {
+        grid-row: 2 / span 1;
+        padding-top: 10px;
+    }
+    .four p {
+        grid-row: 3 / span 1;
+        
+    }
+    .five {
+        grid-column: 5;
+        padding: 10px;
+    }
+    .five img {
+        grid-row: 1 / span 1;
+    }
+    .five h3 {
+        grid-row: 2 / span 1;
+        padding: 10px;
+    }
+    .five p {
+        grid-row: 3 / span 1;
+       padding: 10px;
+    }
+}
+@media screen and (min-width:834px) {
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    label span, input {
+        display: none;
+    }
+    #combo {
+        clear:both;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    #playlists {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) ;
+        grid-template-rows: repeat(1, 1fr);
+        max-height: 700px;
+    }
+    #curated {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) ;
+        grid-template-rows: repeat(1, 1fr);
+        max-height: 700px;
+    }
+    .lists {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) ;
+        grid-template-rows: repeat(1, 1fr);
+        max-height: 500px;
+        overflow: scroll;
+    }
+    .lists a {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: repeat(2, 1fr);
+        width:400px;
+        height:130px;
+        margin: 10px;
+    }
+    .lists a img {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        margin-left: 10px;
+    }
+    .lists a h3 {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+        padding-top: 10px;
+    }
+    .lists a p {
+        grid-column: 2 / span 1;
+        grid-row: 2 / span 1;
+        margin-right: 10px;
+        padding-bottom: 50px;
+    }
+}
